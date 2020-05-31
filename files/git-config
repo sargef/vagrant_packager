@@ -1,0 +1,45 @@
+[user]
+	name = sargef
+	email = sargef38@bigpond.com
+[core]
+	editor = atom
+[diff]
+	tool = kdiff
+	external = git-p4merge--helper
+[difftool "p4merge"]
+	path = F:\\Git\\mingw64\\libexec\\git-core\\mergetools\\p4merge.exe
+[mergetool]
+	prompt = false
+[alias]
+	host = log --oneline --graph --decorate --all
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[difftool]
+	prompt = false
+[merge]
+	tool = kdiff
+[mergetool "p4merge"]
+	path = F:\\Git\\mingw64\\libexec\\git-core\\mergetools\\p4merge.exe
+[p4merge]
+	prompt = false
+[difftoolp4merge]
+	path = C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Perforce\\p4merge.exe
+[diff "tool.kdiff"]
+	path = F:\\Git\\mingw64\\libexec\\git-core\\mergetools\\kdiff3.exe
+[mergetool "kdiff"]
+	path = F:\\Git\\mingw64\\libexec\\git-core\\mergetools\\kdiff3.exe
+[difftool "kdiff"]
+	path = F:\\Git\\mingw64\\libexec\\git-core\\mergetools\\kdiff3.exe
+[credential]
+	helper = manager
+[color]
+	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[difftool "sourcetree"]
+	cmd = '' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
